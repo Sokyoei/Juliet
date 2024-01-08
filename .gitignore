@@ -1,3 +1,16 @@
+# ignore Sokyoei's temp dir
+/temp/
+/Sokyoei/
+
+# ignore build dir
+/target/
+
+# ignore JetBrains IDEA config dir
+/.idea/
+
+########################################################################################################################
+# Java
+########################################################################################################################
 # Compiled class file
 *.class
 
@@ -22,3 +35,17 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+########################################################################################################################
+# VS Code
+########################################################################################################################
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.code-workspace
+
+# VSCode Extension `Code Runner` temp file
+tempCodeRunnerFile.*
