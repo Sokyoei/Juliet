@@ -1,6 +1,6 @@
 # ignore Sokyoei's temp dir
-/temp/
-/Sokyoei/
+temp/
+Sokyoei/
 
 # ignore build dir
 /target/

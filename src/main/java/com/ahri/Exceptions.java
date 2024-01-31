@@ -4,6 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.IOError;
 import java.io.IOException;
 import java.io.EOFException;
+import java.security.GeneralSecurityException;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.Arrays;
 
@@ -39,6 +41,8 @@ import java.util.Arrays;
  * X        {@link SQLException}
  * X        {@link CloneNotSupportedException}
  * X        {@link InterruptedException}
+ * X        {@link GeneralSecurityException}
+ * X            {@link NoSuchAlgorithmException}
  * X    {@link Error}
  * X        {@link AssertionError}
  * X        {@link IOError}
