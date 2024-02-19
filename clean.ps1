@@ -1,3 +1,5 @@
+mvn.cmd clean
+
 $root_cache_paths = @(
     ".\target"
 )

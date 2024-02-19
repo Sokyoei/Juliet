@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory;
 
 public class Server {
     private static final Logger logger = LoggerFactory.getLogger(Server.class);
-
     private final int port;
 
     public Server(int port) {
@@ -53,5 +52,9 @@ public class Server {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
         }
+    }
+
+    public static void main(String[] args) {
+        Server server = new Server(2222);
     }
 }

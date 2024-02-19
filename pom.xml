@@ -41,7 +41,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- logger -->
+        <!-- logger 日志 -->
         <!-- slf4j -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -60,17 +60,26 @@
             <version>2.22.1</version>
         </dependency>
 
-        <!-- netty -->
+        <!-- netty 网络 -->
+        <!-- https://netty.io/ -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
             <version>4.1.106.Final</version>
         </dependency>
-        <!-- bouncycastle secret key -->
+        <!-- bouncycastle 密钥 -->
+        <!-- https://www.bouncycastle.org/ -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk18on</artifactId>
             <version>1.77</version>
+        </dependency>
+        <!-- velocity web 模板 -->
+        <!-- https://velocity.apache.org/ -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.3</version>
         </dependency>
     </dependencies>
 
