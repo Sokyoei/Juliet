@@ -1,4 +1,4 @@
-package com.ahri.socket_operations.netty;
+package com.ahri.net.netty;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

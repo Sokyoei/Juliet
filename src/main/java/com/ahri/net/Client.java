@@ -1,4 +1,4 @@
-package com.ahri.socket_operations;
+package com.ahri.net;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

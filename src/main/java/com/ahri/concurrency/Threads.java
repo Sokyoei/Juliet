@@ -13,17 +13,17 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class Threads {
     public static void main(String[] args) {
         // extends Thread
-        AhriThread4 t1 = new AhriThread4();
-        t1.start();
+        ExtendsThread et = new ExtendsThread();
+        et.start();
 
         // implements Runnable
-        AhriThread2 t = new AhriThread2();
-        Thread t2 = new Thread(t);
-        t2.start();
+        ImplementsRunnable ir = new ImplementsRunnable();
+        Thread t = new Thread(ir);
+        t.start();
 
         // implements Callable
-        AhriThread3 t3 = new AhriThread3();
-        FutureTask ft = new FutureTask<>(t3);
+        ImplementsCallable ic = new ImplementsCallable();
+        FutureTask<Object> ft = new FutureTask<>(ic);
         new Thread(ft).start();
         try {
             Object s = ft.get();
@@ -36,45 +36,48 @@ public class Threads {
         ExecutorService es = Executors.newFixedThreadPool(10);
         System.out.println(es.getClass());
         ThreadPoolExecutor tpe = (ThreadPoolExecutor) es;
-        tpe.execute(new AhriThread2());
-        tpe.submit(new AhriThread3());
+        tpe.execute(new ImplementsRunnable());
+        tpe.submit(new ImplementsCallable());
         tpe.shutdown();
 
         // 使用匿名类
-        Thread t5 = new Thread(new Runnable() {
+        Thread lambdaThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("niming");
             }
         });
-        t5.start();
-    }
-}
-
-class AhriThread4 extends Thread {
-    @Override
-    public void run() {
-        System.out.println("AhriThread");
+        lambdaThread.start();
     }
 }
 
 /**
- * AhriThread2
+ * Extends Thread
  */
-class AhriThread2 implements Runnable {
+class ExtendsThread extends Thread {
     @Override
     public void run() {
-        System.out.println("AhriThread");
+        System.out.println("Extends Thread");
     }
 }
 
 /**
- * AhriThread2
+ * Implements Runnable
  */
-class AhriThread3 implements Callable {
+class ImplementsRunnable implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Implements Runnable");
+    }
+}
+
+/**
+ * Implements Callable
+ */
+class ImplementsCallable implements Callable<Object> {
     @Override
     public Object call() throws Exception {
-        System.out.println("AhriThread");
+        System.out.println("Implements Runnable");
         return 1;
     }
 }

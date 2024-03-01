@@ -1,4 +1,4 @@
-package com.ahri.socket_operations.netty;
+package com.ahri.net.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
