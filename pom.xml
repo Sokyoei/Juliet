@@ -7,11 +7,25 @@
     <groupId>com.ahri</groupId>
     <artifactId>Juliet</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>Juliet</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>https://github.com/Sokyoei/Juliet</url>
+    <developers>
+        <developer>
+            <name>Sokyoei</name>
+            <email>89757286+Sokyoei@users.noreply.github.com</email>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>MIT</name>
+        </license>
+    </licenses>
+
+    <modules>
+        <module>java</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

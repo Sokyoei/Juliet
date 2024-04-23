@@ -3,7 +3,7 @@ temp/
 Sokyoei/
 
 # ignore build dir
-/target/
+target
 
 # ignore JetBrains IDEA config dir
 /.idea/
