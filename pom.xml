@@ -25,6 +25,8 @@
 
     <modules>
         <module>java</module>
+        <module>netty_learn</module>
+        <module>springboot_learn</module>
     </modules>
 
     <properties>
@@ -54,7 +56,6 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
-
         <!-- logger 日志 -->
         <!-- slf4j -->
         <dependency>
@@ -73,22 +74,14 @@
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.22.1</version>
         </dependency>
-
-        <!-- netty 网络 -->
-        <!-- https://netty.io/ -->
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.1.106.Final</version>
-        </dependency>
-        <!-- bouncycastle 密钥 -->
+        <!-- bouncycastle key -->
         <!-- https://www.bouncycastle.org/ -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk18on</artifactId>
             <version>1.77</version>
         </dependency>
-        <!-- velocity web 模板 -->
+        <!-- velocity web template -->
         <!-- https://velocity.apache.org/ -->
         <dependency>
             <groupId>org.apache.velocity</groupId>
