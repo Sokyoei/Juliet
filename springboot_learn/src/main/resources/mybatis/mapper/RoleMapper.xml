@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahri.springbootlearn.mapper.RoleMapper">
+    <resultMap id="role" type="Role">
+        <result column="nameZh" property="nameZh" javaType="String"/>
+        <result column="nameEn" property="nameEn" javaType="String"/>
+        <result column="birthday" property="birthday" javaType="Date"/>
+        <result column="title" property="title" javaType="String"/>
+        <result column="version" property="version" javaType="String"/>
+        <result column="constellation" property="constellation" javaType="String"/>
+        <result column="level" property="level" javaType="int"/>
+    </resultMap>
+
+    <!--    <insert id="insertRole">-->
+    <!--        insert into role()-->
+    <!--        values ()-->
+    <!--    </insert>-->
+
+    <!--    <delete id="deleteRole">-->
+    <!--        delete-->
+    <!--        from role-->
+    <!--        where id = #{id}-->
+    <!--    </delete>-->
+
+    <!--    <update id="updateRole">-->
+    <!--        update role-->
+    <!--        set-->
+    <!--    </update>-->
+
+    <select id="selectRoleList" resultType="com.ahri.springbootlearn.domain.Role">
+        select *
+        from role;
+    </select>
+
+    <!--    <select id="findAll" resultType="com.ahri.springbootlearn.domain.Role">-->
+    <!--        select *-->
+    <!--        from role;-->
+    <!--    </select>-->
+</mapper>

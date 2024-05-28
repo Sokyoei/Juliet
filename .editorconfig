@@ -10,8 +10,13 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+max_line_length = 120
 
+# Codestyle for JetBrains IDEs
 ij_xml_align_attributes = false
+ij_java_align_multiline_chained_methods = true
+ij_java_method_call_chain_wrap = normal
+ij_java_enum_constants_wrap = split_into_lines
 
 [.gitmodules]
 indent_style = tab

@@ -1,0 +1,9 @@
+server:
+  port: 9131
+
+spring:
+  # 数据库配置
+  datasource:
+    url:
+    username: violet
+    password: ahri

@@ -1,0 +1,52 @@
+server:
+  port: 9031
+
+spring:
+  # 数据库配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 初始连接数
+      initial-size: 5
+      # 最小连接数
+      min-idle: 5
+      # 最大连接数
+      max-active: 20
+      # 获取连接等待超时的时间（ms）
+      max-wait: 60000
+      # 对支持游标的数据库提升巨大（e.g. Oracle）
+      pool-prepared-statements: false
+      # 用于验证的 SQL 语句
+      validation-query: select 'x'
+      # 空闲时间大于 time-between-eviction-runs-millis 时，执行 validation-query 检测连接是否有效
+      test-while-idle: true
+      # 申请链接时执行 validation-query 检测连接是否有效
+      test-on-borrow: false
+      # 归还链接时执行 validation-query 检测连接是否有效
+      test-on-return: false
+      #
+      time-between-eviction-runs-millis: 60000
+      #
+      min-evictable-idle-time-millis: 30000
+      #
+      max-pool-prepared-statement-per-connection-size: 20
+
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/Violet?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: ahri
+    password: ahri
+
+  # Redis
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*Mapper.xml
+  #    configuration:
+  #        log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  type-aliases-package: com.ahri.springbootlearn.domain
+  config-location: classpath:mybatis/mybatis-config.xml
+  configuration-properties:
+    offsetAsPageNum: true

@@ -1,6 +1,3 @@
-server:
-  port: 9031
-
 spring:
-  application:
-    name: springbootlearn
+  profiles:
+    active: dev

@@ -24,7 +24,7 @@ public class Server {
     /**
      * netty 服务端启动
      */
-    public void action() {
+    public void run() {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
@@ -37,10 +37,8 @@ public class Server {
                            .childHandler(new ChannelInitializer<SocketChannel>() {
                                @Override
                                protected void initChannel(SocketChannel socketChannel) {
-                                   // socketChannel.pipeline().addLast(new ServerHandle());
+                                   socketChannel.pipeline().addLast(new ServerHandler());
                                }
-
-
                            });
             System.out.println("Server Start");
             logger.info("netty Server Start");
@@ -55,6 +53,6 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        Server server = new Server(2222);
+        new Server(2222).run();
     }
 }

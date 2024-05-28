@@ -4,5 +4,6 @@
         "editor.insertSpaces": true,
         "editor.detectIndentation": true
     },
-    "java.format.settings.url": "eclipse-formatter.xml"
+    "java.format.settings.url": "eclipse-formatter.xml",
+    "java.compile.nullAnalysis.mode": "automatic"
 }

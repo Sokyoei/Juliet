@@ -11,11 +11,11 @@ public class Client {
         this.port = port;
     }
 
-    public void action() {
+    public void run() {
 
     }
 
     public static void main(String[] args) {
-        Client client = new Client(2222);
+        new Client(2222).run();
     }
 }
