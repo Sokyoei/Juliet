@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class TomlFile {
-    private final Path toml_file = Paths.get(System.getProperty("user.dir") + "/data/Ahri/Ahri.toml").toAbsolutePath();
+    private final Path toml_file = Paths.get(System.getenv("SOKYOEI_DATA_DIR") + "/Ahri/Ahri.toml").toAbsolutePath();
 
     public static void main(String[] args) {
 

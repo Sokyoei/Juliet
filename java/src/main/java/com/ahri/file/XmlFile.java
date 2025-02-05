@@ -13,7 +13,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class XmlFile {
-    private final Path xml_file = Paths.get(System.getProperty("user.dir") + "/data/Ahri/Ahri.xml").toAbsolutePath();
+    private final Path xml_file = Paths.get(System.getenv("SOKYOEI_DATA_DIR") + "/Ahri/Ahri.xml").toAbsolutePath();
 
     public void javaxXml() {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

@@ -13,7 +13,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class JsonFile {
-    private final Path json_file = Paths.get(System.getProperty("user.dir") + "/data/Ahri/Ahri.json").toAbsolutePath();
+    private final Path json_file = Paths.get(System.getenv("SOKYOEI_DATA_DIR") + "/Ahri/Ahri.json").toAbsolutePath();
 
     void orgJson() throws FileNotFoundException {
         JSONTokener jsonTokener = new JSONTokener(new FileReader(json_file.toString()));
