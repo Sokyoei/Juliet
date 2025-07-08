@@ -11,6 +11,7 @@ import java.util.Arrays;
 
 /**
  * Java Error and Exception
+ * @formatter:off
  * X{@link Throwable}
  * X    {@link Exception}
  * X        {@link IOException}
@@ -63,6 +64,7 @@ import java.util.Arrays;
  * X            {@link OutOfMemoryError} 内存溢出
  * X            {@link StackOverflowError}
  * X            {@link UnknownError}
+ * @formatter:on
  */
 public class Exceptions {
 
