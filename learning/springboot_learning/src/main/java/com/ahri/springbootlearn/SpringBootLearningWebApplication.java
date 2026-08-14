@@ -6,13 +6,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 // @SpringBootApplication
-public class SpringBootLearnWebApplication extends SpringBootServletInitializer {
+public class SpringBootLearningWebApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder springApplicationBuilder) {
-        return springApplicationBuilder.sources(SpringBootLearnWebApplication.class);
+        return springApplicationBuilder.sources(SpringBootLearningWebApplication.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootLearnWebApplication.class, args);
+        SpringApplication.run(SpringBootLearningWebApplication.class, args);
     }
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>Juliet</artifactId>
+        <groupId>com.ahri</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>learning</artifactId>
+    <packaging>pom</packaging>
+
+    <name>learning</name>
+    <url>https://github.com/Sokyoei/Juliet/tree/master/learning</url>
+    <developers>
+        <developer>
+            <name>Sokyoei</name>
+            <email>89757286+Sokyoei@users.noreply.github.com</email>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>MIT</name>
+        </license>
+    </licenses>
+
+    <modules>
+        <module>netty_learning</module>
+        <module>springboot_learning</module>
+    </modules>
+</project>

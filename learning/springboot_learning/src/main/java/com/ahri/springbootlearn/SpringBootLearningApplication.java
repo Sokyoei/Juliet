@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan(basePackages = {"com.ahri.springbootlearn.mapper"})
-public class SpringBootLearnApplication {
+public class SpringBootLearningApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootLearnApplication.class, args);
+        SpringApplication.run(SpringBootLearningApplication.class, args);
     }
 }
