@@ -24,7 +24,7 @@ import java.util.Queue; // 队列 FIFO
 import java.util.ArrayDeque;
 import java.util.PriorityQueue; // 优先队列
 
-public class DataStructure {
+public class Containers {
     public static void main(String[] args) {
 
     }
