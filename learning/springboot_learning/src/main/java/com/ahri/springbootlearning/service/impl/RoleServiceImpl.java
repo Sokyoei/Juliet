@@ -1,8 +1,8 @@
-package com.ahri.springbootlearn.service.impl;
+package com.ahri.springbootlearning.service.impl;
 
-import com.ahri.springbootlearn.domain.Role;
-import com.ahri.springbootlearn.mapper.RoleMapper;
-import com.ahri.springbootlearn.service.IRoleService;
+import com.ahri.springbootlearning.domain.Role;
+import com.ahri.springbootlearning.mapper.RoleMapper;
+import com.ahri.springbootlearning.service.IRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

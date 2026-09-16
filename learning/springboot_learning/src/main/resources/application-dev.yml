@@ -46,7 +46,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*Mapper.xml
   #    configuration:
   #        log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
-  type-aliases-package: com.ahri.springbootlearn.domain
+  type-aliases-package: com.ahri.springbootlearning.domain
   config-location: classpath:mybatis/mybatis-config.xml
   configuration-properties:
     offsetAsPageNum: true

@@ -1,6 +1,6 @@
-package com.ahri.springbootlearn.service;
+package com.ahri.springbootlearning.service;
 
-import com.ahri.springbootlearn.domain.Role;
+import com.ahri.springbootlearning.domain.Role;
 
 import java.util.List;
 

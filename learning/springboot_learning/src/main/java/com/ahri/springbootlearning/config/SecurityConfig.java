@@ -1,4 +1,4 @@
-// package com.ahri.springbootlearn.config;
+// package com.ahri.springbootlearning.config;
 
 // import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 // import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;

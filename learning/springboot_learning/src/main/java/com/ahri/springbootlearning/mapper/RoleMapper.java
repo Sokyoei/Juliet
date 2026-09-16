@@ -1,6 +1,6 @@
-package com.ahri.springbootlearn.mapper;
+package com.ahri.springbootlearning.mapper;
 
-import com.ahri.springbootlearn.domain.Role;
+import com.ahri.springbootlearning.domain.Role;
 import org.apache.ibatis.annotations.Insert;
 
 import java.util.List;

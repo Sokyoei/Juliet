@@ -1,4 +1,4 @@
-package com.ahri.springbootlearn.domain;
+package com.ahri.springbootlearning.domain;
 
 import java.util.Date;
 

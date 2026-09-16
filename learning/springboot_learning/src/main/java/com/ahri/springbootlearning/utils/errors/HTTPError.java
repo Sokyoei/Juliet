@@ -1,4 +1,4 @@
-package com.ahri.springbootlearn.utils.errors;
+package com.ahri.springbootlearning.utils.errors;
 
 public enum HTTPError {
     SUCCESS(200, "成功"),

@@ -1,7 +1,7 @@
-package com.ahri.springbootlearn.controller;
+package com.ahri.springbootlearning.controller;
 
-import com.ahri.springbootlearn.domain.Role;
-import com.ahri.springbootlearn.service.IRoleService;
+import com.ahri.springbootlearning.domain.Role;
+import com.ahri.springbootlearning.service.IRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,7 +1,7 @@
-package com.ahri.springbootlearn.config;
+package com.ahri.springbootlearning.config;
 
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MybatisPlusConfig {
+public class JulietConfig {
 }

@@ -1,4 +1,4 @@
-package com.ahri.springbootlearn.utils.exceptions;
+package com.ahri.springbootlearning.utils.exceptions;
 
 public class JulietException extends RuntimeException {
     private static final long serialVersionUID = 1L;

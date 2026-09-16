@@ -1,4 +1,4 @@
-package com.ahri.springbootlearn.config;
+package com.ahri.springbootlearning.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
